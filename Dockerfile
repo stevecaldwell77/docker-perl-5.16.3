@@ -6,7 +6,6 @@ RUN mkdir /var/local/src && \
   cd /var/local/src/perl-5.16.3 && \
   ./Configure -des -Dprefix=/usr/local && \
   make && \
-  make test && \
   make install && \
   (curl -L http://cpanmin.us | perl - App::cpanminus) && \
   cpanm Module::CPANfile
